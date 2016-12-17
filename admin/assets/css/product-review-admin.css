@@ -161,3 +161,6 @@ input.mdc-meta-field[type="number"] {
 	border-color: #009933 #449944 #05891B;
 	color: #fff;
 }
+.cbpr-add-ons img {
+	border: 1px solid #ddd;
+}

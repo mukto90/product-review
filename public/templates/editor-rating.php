@@ -38,8 +38,9 @@ $html = '
 		foreach ( $args['editor_rating'] as $key => $value ) {
 			$percent = $value * 10;
 			$html .= '
+			<label for="">' . $key . '<span>' . $value . '</span></label>
 			<div class="cbpr-progress-single">
-				<div class="cbpr-progress-fill" style="width: ' . $percent . '%">' . $value . '</div>
+				<div class="cbpr-progress-fill" style="width: ' . $percent . '%">&nbsp;</div>
 			</div>';
 		}
 		$html .= '</div><!-- cbpr-progress-bars -->';
@@ -52,8 +53,9 @@ $html = '
 		foreach ( $args['editor_rating'] as $key => $value ) {
 			$percent = $value;
 			$html .= '
+			<label for="">' . $key . '<span>' . $percent . '%</span></label>
 			<div class="cbpr-progress-single">
-				<div class="cbpr-progress-fill" style="width: ' . $percent . '%">' . $percent . '%</div>
+				<div class="cbpr-progress-fill" style="width: ' . $percent . '%">&nbsp;</div>
 			</div>';
 		}
 		$html .= '</div><!-- cbpr-progress-bars -->';

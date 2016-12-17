@@ -33,23 +33,23 @@ class Product_Review_Add_Ons {
 
         $add_ons = array(
         	'product-review-rich-snippet'	=>	array(
-        		'name'	=>	'Product Review Rich Snippet',
-        		'desc'	=> 'Did you notice those yellow starts in Google search result? <strong>Rich snippets</strong> are a type of on page mark-up. Google rich snippets, they are the extra bits of text that appear under search results.  Think of them like bacon bits for search engines. <br /><strong>But, why?</strong> Well, which result was your eye drawn toward?  The one with the pretty yellow stars?  Precisely.  That is why you should care about Rich Snippets. A statistic shows that, <strong>rich snippets can increase your organic visitors by upto 350%!</strong> <a href="https://blog.dashburst.com/google-search-what-are-rich-snippets/" target="_blank">(See here)</a>',
+        		'name'	=>	'Rich Snippet',
+        		'desc'	=> 'Did you notice those yellow starts in Google search result?<br /><img src="' . plugins_url( 'admin/assets/img/rich-snippets.png', CB_PRODUCT_REVIEW ) . '" /><br /><strong>Rich snippets</strong> are a type of on page mark-up. They are the extra bits of text that appear under search results.  Think of them like bacon bits for search engines. <br /><strong>But, why?</strong> Well, which result was your eye drawn toward?  The one with the pretty yellow stars?  Precisely.  That is why you should care about Rich Snippets. A statistic shows that, <strong>rich snippets can increase your organic visitors by upto 300%!</strong> <a href="https://blog.dashburst.com/google-search-what-are-rich-snippets/" target="_blank">(See here)</a>',
+        		'price'	=>	0
+        	),
+        	'product-review-user-rating'=>	array(
+        		'name'	=>	'User Rating',
+        		'desc'	=> 'What do your visitors think about the product you are writing review of? <strong>Do they agree with you?</strong> Use this add-on and allow visitors to submit their review as well as segmented ratings. It comes with features including- user rating, rich editor for user reviews, upvote/downvote on existing user reviews and more.',
         		'price'	=>	0
         	),
         	'product-review-style-editor'	=>	array(
-        		'name'	=>	'Product Review Style Editor',
+        		'name'	=>	'Style Editor',
         		'desc'	=> 'Not satisfied with the color scheme that comes with this plugin? Or maybe it\'s not matching with site\'s appearances? Install this add-on and <strong>customize the style in the way you think</strong>; with color picker and even your own CSS codes!',
         		'price'	=>	0
         	),
         	'product-review-pros-cons'	=>	array(
-        		'name'	=>	'Product Review Pros &amp; Cons',
+        		'name'	=>	'Pros &amp; Cons',
         		'desc'	=> 'Writting <strong>Pros &amp; Cons</strong> in a formatted look may seem difficult to you. This add-on will help you add Pros and Cons in a structured way. Just click and write an entry. Different lists for Pros and Cons. Of course!',
-        		'price'	=>	0
-        	),
-        	'product-review-user-rating'=>	array(
-        		'name'	=>	'Product Review user Rating',
-        		'desc'	=> 'What do your visitors think about the product you are writing review of? <strong>Do they agree with you?</strong> Use this add-on and allow visitors to submit their review as well as segmented ratings. It comes with features including- user rating, rich editor for user reviews, upvote/downvote on existing user reviews and more.',
         		'price'	=>	0
         	),
         );
@@ -79,7 +79,7 @@ class Product_Review_Add_Ons {
         </table>';
 
         if( ! function_exists( 'cb_product_review_pro' ) ) {
-        	echo '<p>Liked all add-ons? <a href="http://codebanyan.com/product/product-review-pro" target="_blank"><button class="button button-primary">Get them as a bundle</button></a></p>';
+        	echo '<p>Liked all add-ons? <a href="http://codebanyan.com/product/product-review-pro" target="_blank"><button class="button button-primary">Get them as a bundle and <strong>save 23%</strong></button></a></p>';
         }
 
         echo '</div><!-- wrap cbpr-wrap -->';

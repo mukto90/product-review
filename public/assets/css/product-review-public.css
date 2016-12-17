@@ -75,15 +75,15 @@ li .comment-respond p.cbpr-single-feature {
 	width: 100% !important;
 }
 .cbpr-progress-single {
-	background: #eee none repeat scroll 0 0;
-	margin: 0 5px 5px 0;
+  background: #eee none repeat scroll 0 0;
+  margin: 0px 5px 0px 0;
 }
 .cbpr-progress-fill {
 	background: #4b4 none repeat scroll 0 0;
 	color: #fff;
 	font-family: monospace;
 	font-size: 12px;
-	line-height: 20px;
+	line-height: 14px;
 	text-align: center;
 }
 .cbpr-rating-single {
@@ -99,6 +99,7 @@ li .comment-respond p.cbpr-single-feature {
 	margin: 8px 0 0;
 }
 .cbpr-footer {
+	margin-top: 10px;
 	text-align: center;
 }
 .cbpr-price-button {
@@ -204,4 +205,21 @@ form#commentform p.cbpr-single-feature {
 .cbpr-rating-star {
 	float: right;
 	padding-right: 8px;
+}
+.cbpr-progress-bars > label {
+  font-size: 12px;
+  font-family: monospace;
+}
+.cbpr-progress-bars span {
+  float: right;
+  padding-right: 10px;
+  padding-top: 6px;
+}
+.cbpr-rating-stars .cbpr-rating-feature {
+  font-size: 14px;
+}
+.cbpr-rating-stars .cbpr-rating-star {
+  float: right;
+  font-size: 14px;
+  padding-right: 10px;
 }

@@ -1,11 +1,5 @@
 <?php
 
-/**
- * WordPress settings API demo class
- *
- * @author Tareq Hasan
- */
-
 require_once dirname( CB_PRODUCT_REVIEW ) . '/vendor/wordpress-settings-api/class.settings-api.php';
 
 if ( ! class_exists( 'CBPR_Settings_API' ) ):
@@ -67,17 +61,18 @@ class CBPR_Settings_API {
                     'type'  => 'select',
                     'options'=> array(
                         'on'   =>  'Enable',
-                        'off'    =>  'Disable',
+                        'off'  =>  'Disable',
                     ),
+                    'default'=> 'off',
                 ),
                 'enable_rich_snippet' => array(
                     'name'  => 'enable_rich_snippet',
                     'label' => __( 'Enable Rich Snippet', 'product-review' ),
-                    'desc'  => __( 'Check this to enable <a href="https://developers.google.com/search/docs/data-types/reviews" target="_blank">rich snippet</a> for new posts.', 'product-review' ) . cbpr_pro_message( 'rich-snippet' ),
+                    'desc'  => __( 'Check this to enable <a href="https://developers.google.com/search/docs/data-types/reviews" target="_blank">rich snippet</a> for new posts. <attr title="aas">Recommended.</attr>', 'product-review' ) . cbpr_pro_message( 'rich-snippet' ),
                     'type'  => 'select',
                     'options'=> array(
                         'on'   =>  'Enable',
-                        'off'    =>  'Disable',
+                        'off'  =>  'Disable',
                     ),
                     'disabled' => true,
                 ),
@@ -88,7 +83,7 @@ class CBPR_Settings_API {
                     'type'  => 'select',
                     'options'=> array(
                         'on'   =>  'Enable',
-                        'off'    =>  'Disable',
+                        'off'  =>  'Disable',
                     ),
                 ),
                 'enable_affiliate' => array(
@@ -98,7 +93,7 @@ class CBPR_Settings_API {
                     'type'  => 'select',
                     'options'=> array(
                         'on'   =>  'Enable',
-                        'off'    =>  'Disable',
+                        'off'  =>  'Disable',
                     ),
                 ),
                 'enable_rating' => array(
@@ -108,7 +103,7 @@ class CBPR_Settings_API {
                     'type'  => 'select',
                     'options'=> array(
                         'on'   =>  'Enable',
-                        'off'    =>  'Disable',
+                        'off'  =>  'Disable',
                     ),
                 ),
                 'rating_type' => array(
@@ -142,7 +137,7 @@ class CBPR_Settings_API {
                     'type'  => 'select',
                     'options'=> array(
                         'on'   =>  'Enable',
-                        'off'    =>  'Disable',
+                        'off'  =>  'Disable',
                     ),
                     'disabled' => true,
                 ),
@@ -153,7 +148,7 @@ class CBPR_Settings_API {
                     'type'  => 'select',
                     'options'=> array(
                         'on'   =>  'Enable',
-                        'off'    =>  'Disable',
+                        'off'  =>  'Disable',
                     ),
                     'disabled' => true,
                 ),
@@ -164,7 +159,7 @@ class CBPR_Settings_API {
                     'type'  => 'select',
                     'options'=> array(
                         'on'   =>  'Enable',
-                        'off'    =>  'Disable',
+                        'off'  =>  'Disable',
                     ),
                     'disabled' => true,
                 ),
@@ -195,12 +190,12 @@ class CBPR_Settings_API {
                     'type'  => 'select',
                     'options'=> array(
                         'on'   =>  'Enable',
-                        'off'    =>  'Disable',
+                        'off'  =>  'Disable',
                     ),
                     'desc'      =>  __( 'Check this to allow logged in users to upvote/downvote for a user rating.', 'product-review' ) . cbpr_pro_message( 'user-rating' ),
                     'class'     =>  'mdc-meta-field',
                     'disabled' => true,
-                    'default'   =>  'off',
+                    'default'  =>  'off',
                 ),
                  'enable_pros_cons' => array(
                     'name'      =>  'enable_pros_cons',
@@ -208,12 +203,12 @@ class CBPR_Settings_API {
                     'type'  => 'select',
                     'options'=> array(
                         'on'   =>  'Enable',
-                        'off'    =>  'Disable',
+                        'off'  =>  'Disable',
                     ),
                     'desc'      =>  __( 'Check this to add \'Pros &amp; Cons\' with product reviews.', 'product-review' ) . cbpr_pro_message( 'pros-cons' ),
                     'class'     =>  'mdc-meta-field',
                     'disabled' => true,
-                    'default'   =>  'off',
+                    'default'  =>  'off',
                 ),
                  'review_location' => array(
                     'name'      =>  'review_location',
