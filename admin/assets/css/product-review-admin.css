@@ -118,8 +118,10 @@ input.mdc-meta-field[type="number"] {
 	font-size: 12px;
 	font-style: italic;
 }
-.wp-picker-container, .wp-picker-container:active,
-#cbpr_general form .form-table select {
+.wp-picker-container,
+.wp-picker-container:active,
+#cbpr_general form .form-table select,
+#cbpr_appearance form .form-table select {
 	float: left;
 	margin: 4px;
 }
@@ -163,4 +165,7 @@ input.mdc-meta-field[type="number"] {
 }
 .cbpr-add-ons img {
 	border: 1px solid #ddd;
+}
+a[href="admin.php?page=product-review-add-ons"] {
+	color: red !important;
 }

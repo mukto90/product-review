@@ -26,7 +26,7 @@ $args = array(
         ),
         'cbpr_enable_rich_snippet' => array(
             'name'      =>  'cbpr_enable_rich_snippet',
-            'label'     =>  __( 'Enable Rich Snippet?  Recommended.', 'product-review' ),
+            'label'     =>  __( 'Enable Rich Snippet? Recommended.', 'product-review' ),
             'type'      =>  'select',
             'options'   => array(
                 'on'    =>  'Enable',
@@ -146,7 +146,7 @@ $args = array(
         ),
         'cbpr_user_rating_impact' => array(
             'name'      =>  'cbpr_user_rating_impact',
-            'label'     =>  __( 'Imapact of user rating', 'product-review' ),
+            'label'     =>  __( 'Impact of user rating', 'product-review' ),
             'type'      =>  'select',
             'disabled'  => true,
             'desc'      =>  __( 'How much impact of visitor ratings will be applied?', 'product-review' ) . cbpr_pro_message( 'user-rating' ),
@@ -162,7 +162,7 @@ $args = array(
                 '0.3'      =>  __( '30%', 'product-review' ),
                 '0.2'      =>  __( '20%', 'product-review' ),
                 '0.1'      =>  __( '10%', 'product-review' ),
-                '0.0'       =>  __( '0%', 'product-review' ),
+                '0.0'      =>  __( '0%', 'product-review' ),
             ),
             'default'   =>  cbpr_get_option( 'user_rating_impact', 'cbpr_general', '100' ),
         ),

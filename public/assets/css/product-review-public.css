@@ -99,7 +99,6 @@ li .comment-respond p.cbpr-single-feature {
 	margin: 8px 0 0;
 }
 .cbpr-footer {
-	margin-top: 10px;
 	text-align: center;
 }
 .cbpr-price-button {
@@ -209,6 +208,7 @@ form#commentform p.cbpr-single-feature {
 .cbpr-progress-bars > label {
   font-size: 12px;
   font-family: monospace;
+  width: 100%;
 }
 .cbpr-progress-bars span {
   float: right;

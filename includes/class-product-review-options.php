@@ -61,18 +61,17 @@ class CBPR_Settings_API {
                     'type'  => 'select',
                     'options'=> array(
                         'on'   =>  'Enable',
-                        'off'  =>  'Disable',
+                        'off'    =>  'Disable',
                     ),
-                    'default'=> 'off',
                 ),
                 'enable_rich_snippet' => array(
                     'name'  => 'enable_rich_snippet',
                     'label' => __( 'Enable Rich Snippet', 'product-review' ),
-                    'desc'  => __( 'Check this to enable <a href="https://developers.google.com/search/docs/data-types/reviews" target="_blank">rich snippet</a> for new posts. <attr title="aas">Recommended.</attr>', 'product-review' ) . cbpr_pro_message( 'rich-snippet' ),
+                    'desc'  => __( 'Check this to enable <a href="https://developers.google.com/search/docs/data-types/reviews" target="_blank">rich snippet</a> for new posts.', 'product-review' ) . cbpr_pro_message( 'rich-snippet' ),
                     'type'  => 'select',
                     'options'=> array(
                         'on'   =>  'Enable',
-                        'off'  =>  'Disable',
+                        'off'    =>  'Disable',
                     ),
                     'disabled' => true,
                 ),
@@ -83,7 +82,7 @@ class CBPR_Settings_API {
                     'type'  => 'select',
                     'options'=> array(
                         'on'   =>  'Enable',
-                        'off'  =>  'Disable',
+                        'off'    =>  'Disable',
                     ),
                 ),
                 'enable_affiliate' => array(
@@ -93,7 +92,7 @@ class CBPR_Settings_API {
                     'type'  => 'select',
                     'options'=> array(
                         'on'   =>  'Enable',
-                        'off'  =>  'Disable',
+                        'off'    =>  'Disable',
                     ),
                 ),
                 'enable_rating' => array(
@@ -103,7 +102,7 @@ class CBPR_Settings_API {
                     'type'  => 'select',
                     'options'=> array(
                         'on'   =>  'Enable',
-                        'off'  =>  'Disable',
+                        'off'    =>  'Disable',
                     ),
                 ),
                 'rating_type' => array(
@@ -137,7 +136,7 @@ class CBPR_Settings_API {
                     'type'  => 'select',
                     'options'=> array(
                         'on'   =>  'Enable',
-                        'off'  =>  'Disable',
+                        'off'    =>  'Disable',
                     ),
                     'disabled' => true,
                 ),
@@ -148,7 +147,7 @@ class CBPR_Settings_API {
                     'type'  => 'select',
                     'options'=> array(
                         'on'   =>  'Enable',
-                        'off'  =>  'Disable',
+                        'off'    =>  'Disable',
                     ),
                     'disabled' => true,
                 ),
@@ -159,13 +158,13 @@ class CBPR_Settings_API {
                     'type'  => 'select',
                     'options'=> array(
                         'on'   =>  'Enable',
-                        'off'  =>  'Disable',
+                        'off'    =>  'Disable',
                     ),
                     'disabled' => true,
                 ),
                  'user_rating_impact' => array(
                     'name'      =>  'user_rating_impact',
-                    'label'     =>  __( 'Imapact of user rating', 'product-review' ),
+                    'label'     =>  __( 'Impact of user rating', 'product-review' ),
                     'type'      =>  'select',
                     'desc'      =>  __( 'How much impact of visitor ratings will be applied?', 'product-review' ) . cbpr_pro_message( 'user-rating' ),
                     'options'   =>  array(
@@ -190,12 +189,12 @@ class CBPR_Settings_API {
                     'type'  => 'select',
                     'options'=> array(
                         'on'   =>  'Enable',
-                        'off'  =>  'Disable',
+                        'off'    =>  'Disable',
                     ),
                     'desc'      =>  __( 'Check this to allow logged in users to upvote/downvote for a user rating.', 'product-review' ) . cbpr_pro_message( 'user-rating' ),
                     'class'     =>  'mdc-meta-field',
                     'disabled' => true,
-                    'default'  =>  'off',
+                    'default'   =>  'off',
                 ),
                  'enable_pros_cons' => array(
                     'name'      =>  'enable_pros_cons',
@@ -203,12 +202,12 @@ class CBPR_Settings_API {
                     'type'  => 'select',
                     'options'=> array(
                         'on'   =>  'Enable',
-                        'off'  =>  'Disable',
+                        'off'    =>  'Disable',
                     ),
                     'desc'      =>  __( 'Check this to add \'Pros &amp; Cons\' with product reviews.', 'product-review' ) . cbpr_pro_message( 'pros-cons' ),
                     'class'     =>  'mdc-meta-field',
                     'disabled' => true,
-                    'default'  =>  'off',
+                    'default'   =>  'off',
                 ),
                  'review_location' => array(
                     'name'      =>  'review_location',
@@ -224,6 +223,23 @@ class CBPR_Settings_API {
                 ),
             ),
             'cbpr_appearance' => array(
+                /**
+                 * @since 1.1.0
+                 */
+                'template'      => array(
+                    'name'  => 'template',
+                    'label' => __( 'Choose Template', 'product-review' ),
+                    'desc'  => __( 'Choose a template to be used', 'product-review' ) . cbpr_pro_message( 'style-editor' ),
+                    'type'  => 'select',
+                    'options'=> array(
+                        'default'       =>  'Default',
+                        'template_1'    =>  'Template 1',
+                        'template_2'    =>  'Template 2',
+                        'template_3'    =>  'Template 3',
+                        'template_4'    =>  'Template 4',
+                        'template_5'    =>  'Template 5',
+                    ),
+                ),
                 'icon_icon' => array(
                     'name'    => 'icon_icon',
                     'label'   => __( 'Star Icon Color', 'product-review' ),

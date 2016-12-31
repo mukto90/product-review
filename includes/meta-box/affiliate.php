@@ -30,8 +30,8 @@ $args = array(
             'label'     =>  __( 'Open Link in-', 'product-review' ),
             'type'      =>  'radio',
             'options'   =>  array(
-                '_self'      =>  __( 'Current Tab', 'product-review'),
-                '_blank'     =>  __( 'New Tab', 'product-review'),
+                '_self'      =>  __( 'Current Tab', 'product-review' ),
+                '_blank'     =>  __( 'New Tab', 'product-review' ),
             ),
             'class'     =>  'mdc-meta-field',
         ),

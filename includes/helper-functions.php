@@ -97,7 +97,7 @@ function get_cbpr_template( $slug, $args = array() ) {
 	}
 	
 	ob_start();
-	require_once $template_path;
+	require $template_path;
 
 	return ob_get_clean();
 }

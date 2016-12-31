@@ -4,7 +4,7 @@ Donate link: http://nazmulahsan.me
 Tags: review, product review, wordpress review plugin, review plugin, product rating, product rating plugin, segmented rating, rich snippet, pros and cons, user review, editor review
 Requires at least: 3.0.0
 Tested up to: 4.7
-Stable tag: 1.0
+Stable tag: 1.1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -64,7 +64,7 @@ This plugin is built keeping developers in mind. We love to say, it's very much 
 
 = How to install =
 
-1. Upload \`product-review\` to the \`/wp-content/plugins/\` directory
+1. Upload `product-review` to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
 3. Configure settings from the option page
 

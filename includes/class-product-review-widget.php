@@ -21,7 +21,7 @@ class Product_Review_Widget extends WP_Widget {
 	// Creating widget front-end
 	public function widget( $args, $instance ) {
 		// output
-		$title 			= ( ! empty( $instance['title'] ) ) ? $instance['title'] : __( 'Recent Posts', 'product-review'  );
+		$title 			= ( ! empty( $instance['title'] ) ) ? $instance['title'] : __( 'Recent Reviews', 'product-review'  );
 		$post_type 		= $instance['post_type'];
 		$rating_type 	= $instance['rating_type'];
 		$number 		= $instance['number'];
@@ -51,7 +51,7 @@ class Product_Review_Widget extends WP_Widget {
 				<?php if( 'Star Icon' != $rating_type ) : ?>
 					 - <?php echo round( cbpr_average_rating( get_the_id() ), 2 ) . '/' . cbpr_meta( 'cbpr_rating_type', get_the_id() ); ?>
 				<?php else: ?>
-					<?php echo cbpr_show_star( cbpr_average_rating( get_the_id() ) ); ?>
+					<span class="cbpr-widget-stars"><?php echo cbpr_show_star( cbpr_average_rating( get_the_id() ) ); ?></span>
 				<?php endif; ?>
 
 				</a>
