@@ -1,0 +1,53 @@
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+	.cbpr-glance, .cbpr-ratings, .cbpr-proscons > div, .cbpr-ratings > div {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	.cbpr-progress-radial {
+		width: calc(100% - 20px);
+	}
+	.cbpr-progress-radial .cbpr-overlay {
+		font-size: 28px;
+		width: calc(100% - 20px);
+	}
+}
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+	.cbpr-proscons > div, .cbpr-ratings > div {
+		width: 50%;
+	}
+	.cbpr-progress-radial {
+		width: calc(100% - 20px);
+	}
+	.cbpr-progress-radial .cbpr-overlay {
+		font-size: 52px;
+		width: calc(100% - 20px);
+	}
+}
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 580px) {
+	.cbpr-proscons > div, .cbpr-ratings > div {
+		width: 50%;
+	}
+	.cbpr-progress-radial {
+		width: calc(100% - 20px);
+	}
+	.cbpr-progress-radial .cbpr-overlay {
+		font-size: 64px;
+		width: calc(100% - 20px);
+	}
+}
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+	.cbpr-glance, .cbpr-ratings, .cbpr-proscons > div {
+		width: 50%;
+	}
+	.cbpr-progress-radial {
+		width: calc(100% - 20px);
+	}
+	.cbpr-progress-radial .cbpr-overlay {
+		font-size: 28px;
+		width: calc(100% - 20px);
+	}
+}

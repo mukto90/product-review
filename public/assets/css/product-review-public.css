@@ -1,0 +1,225 @@
+.cbpr-feature-name {
+	display: inline-block;
+	width: 140px;
+}
+.cbpr-single-star {
+	font-size: 125%;
+	margin-right: 2px;
+}
+p.cbpr-single-feature {
+	margin: 4px 0 !important;
+}
+.cbpr-rating-star .fa, .cbpr-single-feature .fa{
+	color: #FB9A1D;
+}
+.cbpr-input.cbpr-single-star {
+	cursor: pointer;
+}
+.cbpr-main {
+	border: 1px solid #3baeda;
+	border-radius: 3px;
+	margin: 0 auto;
+	padding: 7px;
+}
+.cbpr-overview .cbpr-glance .cbpr-image img {
+	box-shadow: 0 0 0 0;
+}
+.cbpr-main .cbpr-title {
+	margin: 0;
+	font-weight: bold;
+}
+.cbpr-header h3 {
+	margin-bottom: 0;
+}
+.cbpr-product-price {
+	float: right;
+}
+.cbpr-body {
+	overflow: hidden;
+	width: 100%;
+}
+.cbpr-overview {
+	overflow: hidden;
+}
+li .comment-respond p.cbpr-single-feature {
+	display: none;
+}
+.cbpr-glance {
+	float: left;
+	overflow: hidden;
+}
+.cbpr-glance > div {
+	float: left;
+	overflow: hidden;
+	width: 50%;
+}
+.cbpr-image img {
+	margin: 10px;
+	width: calc(100% - 20px);
+}
+.cbpr-average-rating > img {
+	width: calc(100% - 20px);
+}
+.cbpr-review {
+	background-color: rgba(116, 223, 255, 0.2);
+	padding: 5px;
+}
+.cbpr-ratings {
+	float: left;
+	overflow: hidden;
+}
+.cbpr-ratings > div {
+	float: left;
+}
+.no-user-rating .cbpr-ratings > .cbpr-editor-rating{
+	width: 100% !important;
+}
+.cbpr-progress-single {
+  background: #eee none repeat scroll 0 0;
+  margin: 0px 5px 0px 0;
+}
+.cbpr-progress-fill {
+	background: #4b4 none repeat scroll 0 0;
+	color: #fff;
+	font-family: monospace;
+	font-size: 12px;
+	line-height: 14px;
+	text-align: center;
+}
+.cbpr-rating-single {
+	line-height: 20px;
+}
+.cbpr-review p {
+	margin-top: 0;
+}
+.cbpr-proscons > div {
+	float: left;
+}
+.cbpr-body .cbpr-review > p {
+	margin: 8px 0 0;
+}
+.cbpr-footer {
+	text-align: center;
+}
+.cbpr-price-button {
+	background: #fff none repeat scroll 0 0;
+	border: 2px solid #fb9a1d;
+	border-radius: 4px;
+	color: #fb9a1d;
+	cursor: pointer;
+	padding: 8px 40px;
+	transition: all 0.5s ease 0s;
+}
+.cbpr-price-button:hover {
+	background: #fb9a1d;
+	color: #fff;
+}
+.cbpr-main .cbpr-body .cbpr-proscons li {
+	list-style: none;
+	margin: 0;
+}
+.cbpr-pros i {
+	color: #06b102;
+}
+.cbpr-cons i {
+	color: #f00;
+}
+.cbpr-proscons ul {
+	padding-left: 12px;
+	margin-top: 0;
+}
+.cbpr-progress-radial {
+	float: left;
+	position: relative;
+	border-radius: 50%;
+	/*border: 2px solid #2f3439;*/
+	background-color: tomato;
+	margin: 10px 10px 10px 0;
+}
+.cbpr-progress-radial .cbpr-overlay {
+	background: rgba(255, 255, 255, 1);
+	border-radius: 50%;
+	margin-left: 10px;
+	margin-top: 10px;
+	position: absolute;
+	text-align: center;
+}
+.cbpr-vote {
+	cursor: pointer;
+	width: 50px;
+}
+.cbpr-upvote{
+	color: #06b102;
+}
+.cbpr-downvote{
+	color: #f00;
+}
+.cbpr-vote > span {
+	cursor: default;
+	font-size: 12px;
+	padding-left: 4px;
+}
+.cbpr-hidden{
+	display: none;
+}
+.widget_cbpr-widget > ul > li img {
+	width: 24px;
+}
+.cbpr-glance > div.cbpr-gp-summary {
+	border: 2px solid #444;
+	color: #444;
+	margin-top: 10px;
+	width: calc(50% - 14px);
+	text-align: center;
+}
+.cbpr-gp-average {
+	background: #444;
+	color: #fff;
+	font-size: 40px;
+}
+.cbpr-comment-progress-single {
+	display: inline-flex;
+	width: 140px;
+}
+form#commentform output {
+	background-color: #000;
+	border-radius: 8px;
+	color: white;
+	display: inline-block;
+	font-size: 10px;
+	height: 16px;
+	line-height: 16px;
+	margin-top: 8px;
+	position: absolute;
+	text-align: center;
+	width: 32px;
+}
+form#commentform p.cbpr-single-feature { 
+	position: relative;
+}
+.cbpr-input {
+	border: 0 none;
+	cursor: col-resize;
+}
+.cbpr-rating-star {
+	float: right;
+	padding-right: 8px;
+}
+.cbpr-progress-bars > label {
+  font-size: 12px;
+  font-family: monospace;
+  width: 100%;
+}
+.cbpr-progress-bars span {
+  float: right;
+  padding-right: 10px;
+  padding-top: 6px;
+}
+.cbpr-rating-stars .cbpr-rating-feature {
+  font-size: 14px;
+}
+.cbpr-rating-stars .cbpr-rating-star {
+  float: right;
+  font-size: 14px;
+  padding-right: 10px;
+}

@@ -1,0 +1,171 @@
+#wpbody .wrap.cbpr-wrap {
+	background: #fff none repeat scroll 0 0;
+	padding: 10px;
+}
+#wpbody .wrap.cbpr-wrap .nav-tab.nav-tab-active {
+	background: #fff none repeat scroll 0 0;
+	border-bottom: 1px solid #fff;
+}
+.wrap.cbpr-wrap .wp-color-result {
+	border: 1px solid #333;
+}
+.wrap.cbpr-wrap .inside {
+	border: 1px solid #ddd;
+	padding: 6px;
+}
+fieldset > .mdc-label, div.inside > .mdc-label, #cbpr-review-procons .mdc-label {
+	display: inline-block;
+	vertical-align: top;
+	width: 145px;
+	font-weight: normal;
+}
+div.inside fieldset {
+	padding: 10px 0;
+}
+div.inside fieldset > label {
+	display: inline-block;
+	min-width: 50px;
+}
+div.inside fieldset > label[for] {
+	margin-right: 16px;
+}
+.radio.mdc-meta-field {
+	margin-left: 16px;
+}
+#cbpr-review-procons {
+	overflow: hidden;
+}
+#cbpr-review-procons > div {
+	float: left;
+	min-width: 300px;
+	width: 50%;
+}
+.dashicons.dashicons-menu {
+	cursor: move;
+}
+select.mdc-meta-field, input.mdc-meta-field-text[type="text"] {
+	display: inline-block;
+	margin-right: 5px;
+	width: 170px;
+}
+.sortable .dashicons.dashicons-menu {
+	cursor: move;
+	margin-top: 4px;
+	width: 22px;
+}
+.cbpr-feature-rate > input{
+	width: 72px;
+}
+.cbpr-feature-name > input {
+	width: calc(100% - 174px);
+}
+.cbpr-pros-name > input, .cbpr-cons-name > input {
+	width: calc(100% - 94px);
+}
+.li-header > span {
+	display: inline-block;
+	font-family: Verdana;
+	text-align: center;
+}
+.li-header .cbpr-feature-drag {
+	width: 23px;
+}
+.li-header .cbpr-feature-name {
+	width: 23px;
+	width: calc(100% - 177px);
+}
+.feature-remove.button, .pros-remove.button, .cons-remove.button {
+	background: #e22 none repeat scroll 0 0;
+	border: medium none #888;
+	color: #fff;
+	transition: all 0.5s;
+}
+.feature-remove.button:hover, .pros-remove.button:hover, .cons-remove.button:hover {
+	background: #d33 none repeat scroll 0 0;
+	border: medium none #555;
+	color: #fff;
+}
+.feature-add.button, .pros-add.button, .cons-add.button {
+	background: #157200 none repeat scroll 0 0;
+	border: medium none #0F4802;
+	color: #fff;
+	transition: all 0.5s;
+}
+.feature-add.button:hover, .pros-add.button:hover, .cons-add.button:hover {
+	background: #136700 none repeat scroll 0 0;
+	border: medium none #0D3D02;
+	color: #fff;
+}
+.cbpr-feature-rate input[type=number]::-webkit-outer-spin-button,
+.cbpr-feature-rate input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.cbpr-feature-rate input[type=number] {
+    -moz-appearance:textfield;
+    text-align: right;
+}
+.feature-average {
+	float: right;
+	margin-right: 34px;
+}
+input.mdc-meta-field[type="text"],
+input.mdc-meta-field[type="url"],
+input.mdc-meta-field[type="number"] {
+	width: calc(100% - 163px);
+}
+.mdc-small {
+	font-size: 12px;
+	font-style: italic;
+}
+.wp-picker-container,
+.wp-picker-container:active,
+#cbpr_general form .form-table select,
+#cbpr_appearance form .form-table select {
+	float: left;
+	margin: 4px;
+}
+.cbpr-pro{
+	color: #f00;
+}
+.cbpr-add-ons tr > td:first-child {
+	font-weight: bold;
+	vertical-align: top;
+	width: 160px;
+}
+.cbpr-add-ons tr > td:last-child {
+	text-align: center;
+	width: 160px;
+}
+.cbpr-wrap > h2 {
+	border-bottom: 1px solid #ccc;
+}
+.cbpr-add-ons > tbody > tr {
+	border-bottom: 1px solid #eee;
+	display: inline-block;
+	padding-bottom: 6px;
+	padding-top: 6px;
+}
+.cbpr-add-ons > tbody > tr:last-child {
+	border-bottom: 0px;
+}
+.wp-core-ui .button-success {
+	background: #228833 none repeat scroll 0 0;
+	border-color: #009933 #449944 #077a1a;
+	box-shadow: 0 1px 0 #227733;
+	color: #fff;
+	text-decoration: none;
+	text-shadow: 0 -1px 1px #009933, 1px 0 1px #449944, 0 1px 1px #006799, -1px 0 1px #229944;
+}
+.wp-core-ui .button-success:hover {
+	background: #15902A none repeat scroll 0 0;
+	box-shadow: 0 1px 0 #226633;
+	border-color: #009933 #449944 #05891B;
+	color: #fff;
+}
+.cbpr-add-ons img {
+	border: 1px solid #ddd;
+}
+a[href="admin.php?page=product-review-add-ons"] {
+	color: red !important;
+}
