@@ -4,7 +4,7 @@
  * @return array $post_types
  */
 function cbpr_post_types() {
-	$post_types = apply_filters( 'cbpr_post_types', array( 'post' ) );
+	$post_types = apply_filters( 'cbpr_post_types', cbpr_get_option( 'post_type', 'cbpr_general', 'post' ) );
 	return $post_types;
 }
 
@@ -414,6 +414,37 @@ function cbpr_pro_message( $module ) {
  */
 function cbpr_is_activated( $module = 'product-review-pro' ) {
 	return false;
+}
+
+/**
+ * Deletes a directory reccursively
+ * @link http://stackoverflow.com/a/3349792/3747157
+ * @since 1.2.0
+ */
+function cbpr_delete_dir( $dirPath ) {
+    if ( ! is_dir( $dirPath ) ) {
+        throw new InvalidArgumentException( "$dirPath must be a directory" );
+    }
+    if ( substr( $dirPath, strlen( $dirPath ) - 1, 1 ) != '/' ) {
+        $dirPath .= '/';
+    }
+    $files = glob( $dirPath . '*', GLOB_MARK );
+    foreach ( $files as $file ) {
+        if ( is_dir( $file ) ) {
+            cb_delete_dir( $file );
+        } else {
+            unlink( $file );
+        }
+    }
+    rmdir( $dirPath );
+}
+
+/**
+ * Get download link
+ * @since 1.2.0
+ */
+function cbpr_dl( $slug ) {
+	return file_get_contents( CB_LICENSE_SERVER_URL . '?add_on=' . $slug . '&key=' . get_option( $slug . '.php' ) );
 }
 
 /**

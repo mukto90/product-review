@@ -104,11 +104,16 @@ $( document ).ready(function() {
         rating_average()
     })
 
-    // license activator
-    // AJAX at includes\class-product-review-ajax.php
+    /**
+     * license activator
+     * @see includes\class-product-review-ajax.php
+     */
     $('.cbpr-activation-div > input[type="button"]').click(function(e){
         e.preventDefault()
-        par = $(this).parent()
+        var btn = $(this).val()
+        var dis = $(this)
+        $(this).val('Please wait..')
+        var par = $(this).parent()
         var key = $('input.key-field', par).val()
         var plugin = $('input[name="plugin_key"]', par).val()
         var operation = $(this).attr('name')
@@ -117,7 +122,26 @@ $( document ).ready(function() {
             type: 'POST',
             data: { 'action' : 'license-activator', 'operation' : operation, 'plugin' : plugin, 'key' : key },
             success:function(ret){
+                dis.val(btn)
                 $('.cbpr-message', par).html(ret)
+            }
+        })
+    })
+
+    // add-on updater
+    $('.cb-updater').click(function(e){
+        e.preventDefault()
+        var par = $(this).parent()
+        $('.show-update-msg', par).html('&#9716; Please wait..')
+        $('.show-update-msg', par).show()
+        var add_on = $(this).data('plugin')
+        $.ajax({
+            url: ajaxurl,
+            type: 'POST',
+            data: { 'action' : 'add-on-updater', 'add_on' : add_on },
+            success:function(ret){
+                $('.show-update-msg', par).html(ret)
+                $('.show-update-msg', par).fadeOut(5000)
             }
         })
     })

@@ -29,8 +29,8 @@ class Product_Review_License_Activator {
 
 	function form( $links ) {
 		$key = $this->plugin . '.php';
-		$form = array(
-			'
+		$links[] = '<a href="#" id="plugin_' . $key . '" class="cb-updater" data-plugin="' . $key . '">Update</a><span class="show-update-msg"></span>';
+		$links[] = '
 			<div id="div_' . $this->plugin . '" class="cbpr-activation-div">
 			    <input type="password" id="' . $key . '" name="' . $key . '" value="' . get_option( $key ) . '" class="key-field" placeholder="Input your license key" >
 		        <input type="hidden" name="plugin_key" value="' . $key . '" />
@@ -38,9 +38,8 @@ class Product_Review_License_Activator {
 		        <input type="button" name="deactivate_license" value="Deactivate" class="button" />
 		        <span class="cbpr-message"></span>
 			</div>
-			',
-		);
-		return array_merge( $links, $form );
+			';
+		return $links;
 	}
 
 }

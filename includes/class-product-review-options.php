@@ -64,6 +64,14 @@ class CBPR_Settings_API {
                         'off'    =>  'Disable',
                     ),
                 ),
+                'post_type' => array(
+                    'name'  => 'post_type',
+                    'label' => __( 'Post Type', 'product-review' ),
+                    'desc'  => __( 'Check post type that you want to enable reviews on', 'product-review' ),
+                    'type'  => 'select',
+                    'options'=> $this->get_post_types(),
+                    'default'=> 'post'
+                ),
                 'enable_rich_snippet' => array(
                     'name'  => 'enable_rich_snippet',
                     'label' => __( 'Enable Rich Snippet', 'product-review' ),
@@ -341,6 +349,23 @@ class CBPR_Settings_API {
         }
 
         return $pages_options;
+    }
+
+    /**
+     * Get custom post types
+     */
+    public function get_post_types() {
+        $args = apply_filters( 'cbpr_admin_get_post_types', array(
+            'public'                => true,
+            )
+        );
+        $cpts = get_post_types( $args, 'objects' );
+        unset( $cpts['attachment'] ); // we don't need this, right?
+        $post_types = [];
+        foreach ( $cpts as $cpt => $data ) {
+            $post_types[ $cpt ] = $data->labels->singular_name;
+        }
+        return $post_types;
     }
 
 }

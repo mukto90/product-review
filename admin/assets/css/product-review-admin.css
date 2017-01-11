@@ -169,3 +169,7 @@ input.mdc-meta-field[type="number"] {
 a[href="admin.php?page=product-review-add-ons"] {
 	color: red !important;
 }
+.show-update-msg {
+	padding-left: 5px;
+	color: #32373c;
+}

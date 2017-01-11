@@ -24,6 +24,7 @@ class Product_Review_AJAX {
 	 */
 	public function __construct() {
 		add_action( 'wp_ajax_license-activator', array( $this, 'verify' ) );
+		add_action( 'wp_ajax_add-on-updater', array( $this, 'update' ) );
 	}
 
 	/**
@@ -58,6 +59,45 @@ class Product_Review_AJAX {
 
             wp_die();
         }
+	}
+
+	/**
+	 * Update an add-on
+ 	 * @since 1.2.0
+	 */
+	public function update() {
+		$add_on = $_POST['add_on'];
+		if( ! get_option( $add_on ) ) {
+			wp_die( '<span style="color:#f00">&times; Please activate your license first!<span>' );
+		}
+		else{
+			$plugin_slug = str_replace( '.php', '', $add_on );
+			$remote_url = cbpr_dl( $plugin_slug );
+
+			// if fails to get remote url
+			if( $remote_url == '0' ) {
+				wp_die( '<span style="color:#f00">&times; Please activate your license first!<span>' );
+			}
+
+			$plugins_path = WP_CONTENT_DIR . '/plugins/';
+			// copy a zip
+			$zip = $plugins_path . $plugin_slug . '.zip';
+			$plugin_data = file_get_contents( $remote_url );
+			file_put_contents( $zip, $plugin_data );
+			// // delete existing
+			$old_plugin = $plugins_path . $plugin_slug;
+			// cbpr_delete_dir( $old_plugin );
+			// unzip new zip file
+			WP_Filesystem();
+			$unzipfile = unzip_file( $zip, $plugins_path );
+			unlink( $zip );
+			if ( $unzipfile ) {
+				wp_die( '<span style="color:#025E10">&#10003; Successfully updated!</span>' );
+			} else {
+				wp_die( '<span style="color:#f00">&times; There was an error!</span>' );
+			}
+			// delete zip
+		}
 	}
 
 	/**

@@ -4,7 +4,7 @@ Donate link: http://nazmulahsan.me
 Tags: review, product review, wordpress review plugin, review plugin, product rating, product rating plugin, segmented rating, rich snippet, pros and cons, user review, editor review
 Requires at least: 3.0.0
 Tested up to: 4.7
-Stable tag: 1.1.0
+Stable tag: 1.2.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -14,6 +14,7 @@ An extendable and powerful WordPress plugin for product review.
 
 An extendable and powerful WordPress plugin for product review. It comes with the common features that you may need for your review site, including editor review, user review, segmented rating, pros and cons, affiliate button and lot more.
 
+<a href="http://demo.codebanyan.com/product-review/samsung-edge-7/">[Live Demo]</a>
 [youtube https://www.youtube.com/watch?v=mlJzv7lvfOw]
 
 = Editor Review =
@@ -90,5 +91,15 @@ This plugin is built keeping developers in mind. We love to say, it's very much 
 
 == Changelog ==
 
-= 1.0 - 2016/12/11 =
+= 1.0.0 - 2016/12/11 =
 * initial release
+
+= 1.1.0 - 2017/01/04 =
+* [improve] Code improved
+* [add] Templates added
+
+= 1.2.0 - 2017/01/10 =
+* [improve] Code improved
+* [add] Post type chooser
+* [add] License integrated
+* [add] Automatic add-on update integrated
