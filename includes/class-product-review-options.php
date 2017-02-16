@@ -361,7 +361,7 @@ class CBPR_Settings_API {
         );
         $cpts = get_post_types( $args, 'objects' );
         unset( $cpts['attachment'] ); // we don't need this, right?
-        $post_types = [];
+        $post_types = array();
         foreach ( $cpts as $cpt => $data ) {
             $post_types[ $cpt ] = $data->labels->singular_name;
         }

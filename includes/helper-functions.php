@@ -4,7 +4,7 @@
  * @return array $post_types
  */
 function cbpr_post_types() {
-	$post_types = apply_filters( 'cbpr_post_types', cbpr_get_option( 'post_type', 'cbpr_general', 'post' ) );
+	$post_types = apply_filters( 'cbpr_post_types', array( cbpr_get_option( 'post_type', 'cbpr_general', 'post' ) ) );
 	return $post_types;
 }
 
@@ -401,7 +401,7 @@ function cbpr_pro_message( $module ) {
 	$class_name = 'Product_Review_' . str_replace( ' ', '_',  ucwords( str_replace( '-', ' ', $module ) ) );
 	if( ! class_exists( $class_name ) ) {
 		$url = 'http://codebanyan.com/product/product-review-' . $module;
-		return __( ' <a href="' . $url . '" target="_blank"><span class="cbpr-pro">(Pro Feature)</span></a>', 'product-review' );
+		return __( ' <a href="' . $url . '" target="_blank"><span class="cbpr-pro">[Activate]</span></a>', 'product-review' );
 	}
 	return;
 }
