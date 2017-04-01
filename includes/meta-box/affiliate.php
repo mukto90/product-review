@@ -16,8 +16,15 @@ $args = array(
             'name'      =>  'cbpr_affiliate_button_text',
             'label'     =>  __( 'Button Text', 'product-review' ),
             'type'      =>  'text',
-            'placeholder'=> __( 'This will be shown in affiliate button', 'product-review' ),
-            'class'     =>  'mdc-meta-field',
+            'desc'      => __( ' This will be shown in affiliate button', 'product-review' ),
+            'class'     =>  'regular-text',
+        ),
+        array(
+            'name'      =>  'cbpr_affiliate_price',
+            'label'     =>  __( 'Price', 'product-review' ),
+            'type'      =>  'number',
+            'desc'      => __( ' For SEO purpose. No currency symbol.', 'product-review' ),
+            'class'     =>  'regular-text',
         ),
         array(
             'name'      =>  'cbpr_affiliate_button_url',

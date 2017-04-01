@@ -6,9 +6,9 @@
  * @package           Product_Review
  *
  * Plugin Name:       Product Review
- * Plugin URI:        http://codebanyan.com/product/product-review
+ * Plugin URI:        https://codebanyan.com/product/product-review/?
  * Description:       Product Review Plugin for WordPress
- * Version:           1.2.0
+ * Version:           1.2.2
  * Author:            Nazmul Ahsan
  * Author URI:        http://nazmulahsan.me
  * License:           GPL-2.0+
@@ -64,9 +64,10 @@ require_once plugin_dir_path( CB_PRODUCT_REVIEW ) . 'includes/class-product-revi
  */
 function run_cbpr() {
 	do_action( 'before_run_cbpr' );
-	$plugin = new Product_Review();
+	$plugin_name = 'product-review';
+	$version = '1.2.2';
+	$plugin = new Product_Review( $plugin_name, $version );
 	$plugin->run();
 	do_action( 'after_run_cbpr' );
-
 }
 run_cbpr();

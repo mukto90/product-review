@@ -55,8 +55,9 @@ class Product_Review_Admin {
 	 * @since    1.0.0
 	 */
 	public function enqueue_styles() {
-
+		if( cbpr_load_scripts() ) :
 		wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'assets/css/product-review-admin.css', array(), $this->version, 'all' );
+		endif;
 
 	}
 
@@ -66,8 +67,9 @@ class Product_Review_Admin {
 	 * @since    1.0.0
 	 */
 	public function enqueue_scripts() {
-		
+		if( cbpr_load_scripts() ) :
 		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'assets/js/product-review-admin.js', array( 'jquery' ), $this->version, false );
+		endif;
 
 	}
 

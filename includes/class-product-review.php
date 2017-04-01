@@ -48,10 +48,10 @@ class Product_Review {
 	 *
 	 * @since    1.0.0
 	 */
-	public function __construct() {
+	public function __construct( $plugin_name, $version ) {
 
-		$this->plugin_name = 'product-review';
-		$this->version = '1.0.0';
+		$this->plugin_name = $plugin_name;
+		$this->version = $version;
 
 		$this->load_dependencies();
 		$this->set_locale();

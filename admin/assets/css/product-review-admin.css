@@ -137,9 +137,6 @@ input.mdc-meta-field[type="number"] {
 	text-align: center;
 	width: 160px;
 }
-.cbpr-wrap > h2 {
-	border-bottom: 1px solid #ccc;
-}
 .cbpr-add-ons > tbody > tr {
 	border-bottom: 1px solid #eee;
 	display: inline-block;

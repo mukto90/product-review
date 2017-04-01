@@ -24,7 +24,7 @@ class Product_Review_Add_Ons {
 	}
 
 	public function submenu_page() {
-		add_submenu_page( 'product-review', 'Product Review add-ons', 'Add-ons', 'manage_options', 'product-review-add-ons', array( $this, 'page' ) );
+		add_submenu_page( 'product-review', 'Product Review add-ons', '<strong style="color: #f00">Add-ons</strong>', 'manage_options', 'product-review-add-ons', array( $this, 'page' ) );
 	}
 
 	public function page() {
@@ -79,7 +79,7 @@ class Product_Review_Add_Ons {
         </table>';
 
         if( ! function_exists( 'cb_product_review_pro' ) ) {
-        	echo '<p>Liked all add-ons? <a href="http://codebanyan.com/product/product-review-pro" target="_blank"><button class="button button-primary">Get them as a bundle and <strong>save 23%</strong></button></a></p>';
+        	echo '<p>Liked all add-ons? <a href="https://codebanyan.com/product/product-review-pro/?" target="_blank"><button class="button button-primary">Get them as a bundle and <strong>save 23%</strong></button></a></p>';
         }
 
         echo '</div><!-- wrap cbpr-wrap -->';
@@ -113,7 +113,7 @@ class Product_Review_Add_Ons {
 		}
 
 		// bundle or 'this' add-on not installed
-		return '<a href="http://codebanyan.com/product/' . explode( '/', $module )[0] . '" target="_blank"><button class="button button-primary">Purchase</button></a>';
+		return '<a href="https://codebanyan.com/product/' . explode( '/', $module )[0] . '?" target="_blank"><button class="button button-primary">Purchase</button></a>';
 	}
 
 	/**

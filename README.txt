@@ -4,7 +4,7 @@ Donate link: http://nazmulahsan.me
 Tags: review, product review, wordpress review plugin, review plugin, product rating, product rating plugin, segmented rating, rich snippet, pros and cons, user review, editor review
 Requires at least: 3.0.0
 Tested up to: 4.7
-Stable tag: 1.2.0
+Stable tag: 1.2.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -25,7 +25,7 @@ You can allow your users to submit their reviews as well as feature specific rat
 This feature can be enabled or disabled for individual product.
 
 = Rich Snippet =
-Yes, rich snippet. This plugin can help you add Rich Snippet. If you don't know yet- including structured data markup in web content helps Google algorithms better index and understand the content. Some data can also be used to create and display Rich Snippets within the search results. Rich snippet can increase your organic visitor by upto 300%. <a href="http://codebanyan.com/product/product-review-pro/">[Pro Feature]</a>
+Yes, rich snippet. This plugin can help you add Rich Snippet. If you don't know yet- including structured data markup in web content helps Google algorithms better index and understand the content. Some data can also be used to create and display Rich Snippets within the search results. Rich snippet can increase your organic visitor by upto 300%. <a href="https://codebanyan.com/product/product-review-pro/?">[Pro Feature]</a>
 
 = Segmented Rating =
 For an individual post, you can set features that will be cosidered as rating parameters. These parameters will be shown in user review form that a user needs to submit his rating for. You will input your own rating based on this paramters, too. There is no limit of how many features can be added!
@@ -33,11 +33,11 @@ For an individual post, you can set features that will be cosidered as rating pa
 - You can choose rating type and scale of rating from Star, Point or Percentage.
 - Can be set to 'Member Only'
 - You can set how much impact of users' ratings will be applied on the average rating.
-<a href="http://codebanyan.com/product/product-review-pro/">[Pro Feature]</a>
+<a href="https://codebanyan.com/product/product-review-pro/?">[Pro Feature]</a>
 
 = Pros and Cons =
 Every product has its pros and cons. So, this plugin allow to add Pros and Cons for each product. With an interactive and easy to use interface. You can add unlimited number of Pros and Cons, literrally!
-<a href="http://codebanyan.com/product/product-review-pro/">[Pro Feature]</a>
+<a href="https://codebanyan.com/product/product-review-pro/?">[Pro Feature]</a>
 
 = Affiliate Button =
 It made it possible to add an Affiliate Button for a product. You can set button text, URL and even either the link opens in current or new tab.
@@ -50,7 +50,7 @@ Users can vote for existing user ratings, they can submit an upvote if they agre
 
 = Appearance Editor =
 You can change colors of frontend elements from an easy-to-use admin panel without having any coding skills. And yes, you can write your own CSS too, if you want!
-<a href="http://codebanyan.com/product/product-review-pro/">[Pro Feature]</a>
+<a href="https://codebanyan.com/product/product-review-pro/?">[Pro Feature]</a>
 
 = Developers in mind =
 This plugin is built keeping developers in mind. We love to say, it's very much hookable. You can change almost everything you want; from options page to templates, even average rating scores!
@@ -60,7 +60,7 @@ This plugin is built keeping developers in mind. We love to say, it's very much 
 = Minimum Requirements =
 
 * WordPress 3.0
-* PHP version 5.2.*
+* PHP version 5.3.*
 * MySQL version 5.0
 
 = How to install =
@@ -91,15 +91,22 @@ This plugin is built keeping developers in mind. We love to say, it's very much 
 
 == Changelog ==
 
-= 1.0.0 - 2016/12/11 =
-* initial release
+= 1.2.1 - 2017/04/02 =
+* [fix] WooCommerce compatibility fix
 
-= 1.1.0 - 2017/01/04 =
+= 1.2.1 - 2017/02/18 =
 * [improve] Code improved
-* [add] Templates added
+* [add] Product price field for SEO purpose
 
 = 1.2.0 - 2017/01/10 =
 * [improve] Code improved
 * [add] Post type chooser
 * [add] License integrated
 * [add] Automatic add-on update integrated
+
+= 1.1.0 - 2017/01/04 =
+* [improve] Code improved
+* [add] Templates added
+
+= 1.0.0 - 2016/12/11 =
+* initial release

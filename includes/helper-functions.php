@@ -400,7 +400,8 @@ function cbpr_circular_chart_css( $degree ){
 function cbpr_pro_message( $module ) {
 	$class_name = 'Product_Review_' . str_replace( ' ', '_',  ucwords( str_replace( '-', ' ', $module ) ) );
 	if( ! class_exists( $class_name ) ) {
-		$url = 'http://codebanyan.com/product/product-review-' . $module;
+		// $url = 'https://codebanyan.com/product/product-review-' . $module;
+		$url = 'https://codebanyan.com/product/product-review-pro/?';
 		return __( ' <a href="' . $url . '" target="_blank"><span class="cbpr-pro">[Activate]</span></a>', 'product-review' );
 	}
 	return;
@@ -445,6 +446,29 @@ function cbpr_delete_dir( $dirPath ) {
  */
 function cbpr_dl( $slug ) {
 	return file_get_contents( CB_LICENSE_SERVER_URL . '?add_on=' . $slug . '&key=' . get_option( $slug . '.php' ) );
+}
+
+/**
+ * If it needs to load JS and CSS files
+ *
+ * @param string $end where to load scripts. admin|public
+ * @since 1.2.1
+ * @return boolean
+ */
+function cbpr_load_scripts( $end = 'admin' ) {
+	global $pagenow;
+	// check for wp-admin end
+	if( 'admin' == $end ) {
+		if( 
+			( isset( $_GET['page'] ) && ( $_GET['page'] == 'product-review' || $_GET['page'] == 'product-review-add-ons' ) )
+			|| in_array( get_current_screen()->post_type, cbpr_post_types() )
+			|| $pagenow == 'plugins.php'
+			) {
+			return true;
+		}
+	}
+
+	return false;
 }
 
 /**

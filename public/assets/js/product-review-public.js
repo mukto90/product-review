@@ -61,4 +61,18 @@ $(document).ready(function(){
 
 	// fancybox for product image
 	$('.cbpr-fancybox').fancybox()
+
+	// WC compatibility
+	$('#commentform #submit').click(function(e){
+		var rate_total = 0
+		var form = $('#commentform')
+		$('.cbpr-single-feature input', form).each(function(e){
+			var this_val = parseInt($(this).val())
+			rate_total += this_val / $('.cbpr-wc-average').data('rate-times')
+		})
+		var segment_count = $('.cbpr-wc-average').data('segment-count')
+		var average_rating = rate_total / segment_count;
+		$('.cbpr-wc-average').val(Math.round(average_rating))
+		form.submit()
+	})
 })

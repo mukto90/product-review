@@ -6,7 +6,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 define( 'CB_SECRET_KEY', '580cc082161006.41870101' ); // "Secret Key for License Verification Requests" value from license server
-define( 'CB_LICENSE_SERVER_URL', 'http://codebanyan.com' ); // this will be the base URL of license server
+define( 'CB_LICENSE_SERVER_URL', 'https://codebanyan.com' ); // this will be the base URL of license server
 define( 'CB_ITEM_REFERENCE', 'Product Review Add-on' ); // plugin name
 /**
  * Main class for the plugin
