@@ -114,7 +114,7 @@ class Product_Review_Admin {
 	 * @param int $post_id post ID
 	 */
 	public function average_rating_column_content( $column, $post_id ) {
-		if ( $column = 'average_rating' ){
+		if ( $column == 'average_rating' ){
 			if( 'on' != cbpr_meta( 'cbpr_enable_rating', $post_id ) ){
 				_e( 'Not rated', 'product-review' );
 			}
